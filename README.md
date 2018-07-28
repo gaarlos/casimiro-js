@@ -79,7 +79,7 @@ bot.hears(
 
 Además de todos los métodos incluidos en <a href="https://telegraf.js.org/">Telegraf.js</a>, se han añadido los siguientes métodos:
 
-##### replyTo
+### replyTo
 
 Permite contestar a un mensaje.
 
@@ -87,7 +87,7 @@ Permite contestar a un mensaje.
 | ----- | -------- | ----------------------- |
 | msg   | `string` | El mensaje de respuesta |
 
-##### isMessage
+### isMessage
 
 Comprueba si el mensaje de entrada se encuentra en la lista de mensajes dada.
 
@@ -95,7 +95,7 @@ Comprueba si el mensaje de entrada se encuentra en la lista de mensajes dada.
 | --------- | ------- | ---------------------------------- |
 | toCompare | `array` | El array de mensajes para comparar |
 
-##### randomAnswer
+### randomAnswer
 
 Escoge de forma aleatoria entre un array de mensajes
 

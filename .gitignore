@@ -4,4 +4,3 @@ yarn.lock
 
 .env
 /database/*.json
-!/database/*.example.json

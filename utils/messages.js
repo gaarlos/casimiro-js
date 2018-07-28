@@ -4,7 +4,7 @@
  */
 const isMessage = toCompare => msg => {
   const incomeMsg = msg.formatToCompare()
-  return toCompare.some(el => el === incomeMsg)
+  return toCompare.messages.some(el => el === incomeMsg)
 }
 
 /**
@@ -12,9 +12,8 @@ const isMessage = toCompare => msg => {
  * @param {Function} reply
  * @param {Object} message
  */
-const replyTo = msg => ({ reply, message }) => {
+const replyTo = msg => ({ reply, message }) =>
   reply(msg, { reply_to_message_id: message.message_id })
-}
 
 /**
  * @param {String} str
