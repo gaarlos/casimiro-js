@@ -31,9 +31,9 @@ module.exports = class Libro {
 
   printTemplate () {
     return `
-      ${this.createTitleTemplate}\n
-      ${this.createDescripcionTemplate}\n
-      ${this.createPrecioTemplate}
+      ${this.createTitleTemplate()}\n
+      ${this.createDescripcionTemplate()}\n
+      ${this.createPrecioTemplate()}
       `
   }
 

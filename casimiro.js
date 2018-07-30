@@ -8,7 +8,8 @@ const {
   printMessageInConsole,
   printErrorInConsole,
   greetings,
-  insults
+  insults,
+  firebase
 } = require('./middlewares')
 
 // Libs
@@ -20,6 +21,7 @@ const TOKEN = process.env.TOKEN || 'TOKEN'
 const bot = new TelegramBot(TOKEN)
 
 bot.use(printMessageInConsole)
+bot.use(firebase.middleware)
 
 bot.hears(isMessage(mSaludos), greetings)
 bot.hears(isMessage(mInsultos), insults)
